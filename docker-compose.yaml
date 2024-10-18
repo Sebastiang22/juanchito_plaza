@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  chatbot:
+    build:
+      context: ./chatbot
+    container_name: chatbot_service_juanchito
+    ports:
+      - "8001:8000"
+    depends_on:
+      - db_juanchito_plaza 
+    env_file:
+      - .env
+
+  whatsapp:
+    build:
+      context: ./whatsapp_baileys
+    container_name: whatsapp_service_juanchito
+
+  db_juanchito_plaza:
+    image: mysql:8.0
+    container_name: mysql_db_junchito
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: juanchito_plaza
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql_init:/docker-entrypoint-initdb.d
+
+volumes:
+  mysql_data:

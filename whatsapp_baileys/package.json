@@ -1,0 +1,36 @@
+{
+  "name": "tutorial_baileys",
+  "version": "1.0.0",
+  "description": "whatsapp bot / apis",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp"
+  ],
+  "author": "anonymous",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "github:WhiskeySockets/Baileys",
+    "axios": "^1.3.0",
+    "dayjs": "^1.11.13",
+    "eslint": "^8.14.0",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "ffmpeg": "^0.0.4",
+    "jest": "^28.0.3",
+    "jimp": "^0.16.1",
+    "link-preview-js": "^2.1.13",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.0",
+    "node-schedule": "^2.1.1",
+    "nodemon": "^2.0.16",
+    "qrcode": "^1.5.1",
+    "qrcode-terminal": "^0.12.0",
+    "request": "^2.88.2",
+    "sharp": "^0.29.3",
+    "socket.io": "^4.5.0"
+  }
+}

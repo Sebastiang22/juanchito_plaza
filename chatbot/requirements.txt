@@ -1,0 +1,10 @@
+python-dotenv
+langchain_openai
+langchain
+mysql-connector-python
+langchain_community
+fastapi
+pydantic
+uvicorn
+apscheduler
+langgraph
